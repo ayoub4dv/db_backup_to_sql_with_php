@@ -12,7 +12,7 @@
 
     // Set the timezone to Asia/Tehran
     date_default_timezone_set('Asia/Tehran');
-    $thisTime = date('Y-m-d_h-i-s');
+    $thisTime = date('Y-m-d_H-i-s');
     
     /** create subdir time */
     mkdir("$saveDir/$thisTime");
