@@ -45,7 +45,7 @@
         if (!in_array($tbl, $tablesExclude)) {
 
             /** Use mysqldump to create a backup of a specific table */
-            $command = "mysqldump --host=$host --user=$username --password=$password --no-create-info --databases $dbname --tables $tbl > $saveDir/$tbl.sql";
+            $command = "mysqldump --host=$host --user=$username --password=$password --databases $dbname --tables $tbl > $saveDir/$tbl.sql";
             exec($command);
 
             $tblBackuped .= "$tbl \n ";
